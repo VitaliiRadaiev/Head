@@ -172,6 +172,17 @@ $(function(){
 			document.webkitCancelFullScreen();
 		}
 	}
+
+	let mainVideoPlayer = document.querySelector('.resoftables_video_player');
+
+	mainVideoPlayer.onclick = () => {
+
+		let videoWrap = document.querySelector('.resoftables_video');
+		
+		videoWrap.innerHTML = `<iframe width="100%" height="100%" src="${videoWrap.dataset.youtubeurl}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+	}
+
+	
 });
 
 
