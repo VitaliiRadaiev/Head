@@ -1,3 +1,10 @@
+@media (min-width: 3000px) {
+	.text-size {
+		font-size: 38px;
+		line-height: 42.87px;
+	}
+}
+
 @media (max-width: 1800px) {
 	.container {
 		width: 95%;
@@ -382,7 +389,7 @@
 	}
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 767px)  {
 	//-- Header --
 		.header {
 			&_banner {
@@ -423,6 +430,7 @@
 	//-- Resoftables --
 		.resoftables {
 			padding-bottom: 81px;
+			background-size: cover;
 
 			&_video {
 				height: 380px;
@@ -454,6 +462,7 @@
 		.videos {
 			padding-top: 80px;
 			padding-bottom: 81px;
+			background-size: cover;
 		}
 	//-- //Videos --
 
@@ -465,6 +474,29 @@
 					& .social_slider_card {
 						& > figure {
 							height: 240px;
+						}
+					}
+				}
+			}
+
+			& .slick-slide {
+				& > div {
+					flex: 0 1;
+				}
+				& > div:last-child {
+					& .social_slider_item_left {
+
+						& > figure {
+							order: 0;
+						}
+
+						& .social_slider_item_text-wrap {
+							padding-left: 6%;
+						}
+
+						& .social_slider_item_text_icons {
+							left: 12%;
+							right: 2%;
 						}
 					}
 				}
@@ -583,6 +615,10 @@
 					padding: 0 0px;
 				}
 
+				& .slick-slide {
+					height: 100%;
+				}
+
 				&_item {
 
 					&_text {
@@ -616,6 +652,10 @@
 
 				& .slick-arrow {
 					padding: 0 0px;
+				}
+
+				& .slick-slide {
+					height: 100%;
 				}
 
 				&_item {
